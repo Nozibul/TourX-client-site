@@ -1,0 +1,351 @@
+/* Header section  */
+
+ .menu-logo{
+    width: 130px;
+    margin-top: 10px;
+}
+.nav-bg{
+   background-color: rgba(0, 0, 0, 0.0)  !important;
+   transition:background-color 400ms linear;
+   -webkit-transition:background-color 400ms linear;
+   -o-transition:background-color 400ms linear;
+   -moz-transition:background-color 400ms linear;
+ 
+}
+.nav-bgScroll{
+   background-color: white !important;
+   transition:background-color 400ms linear;
+   -webkit-transition:background-color 400ms linear;
+   -o-transition:background-color 400ms linear;
+   -moz-transition:background-color 400ms linear;
+}
+
+.nav-title{
+   text-decoration: none;
+   color: #fff !important ;
+   font-size: 24px;
+   font-weight: 700;
+   text-decoration: none !important;
+   
+}
+.nav-titleScroll{
+   text-decoration: none;
+   color: #f0ad39 !important;
+   font-size: 24px;
+   font-weight: 700;
+   text-decoration: none !important;
+   
+}
+
+.menu-item{
+   color: #fff !important ;
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 20px;
+   margin-right: 15px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+   
+}
+.menu-itemScroll{
+   color: rgb(36, 13, 90) !important;
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 20px;
+   margin-right: 15px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+.menu-item:hover{
+   color:#dfaa4f !important;
+   border-bottom: 2px solid #dfaa4f !important;
+}
+.menu-itemScroll:hover{
+   border-bottom: 2px solid #dfaa4f !important;
+   color:#dfaa4f !important;
+};  
+
+
+/* Banner SLIDER section */
+
+.slide{
+ text-align: center;
+}
+
+.sliderTitle{
+  text-align: left !important;
+  font-size: 70px;
+  color: #fff ;
+  font-weight: 900;
+  line-height: 75px;
+  letter-spacing: 1px;
+  margin-bottom: 60px ;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+
+}
+.sliderDescription{
+  text-align: left !important;
+  font-size: 32px ;
+  color: #ff7f47 ;
+  font-weight: 500 ;
+  /* line-height: 30px; */
+  letter-spacing: 1px;
+  margin-bottom: 120px ;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+
+
+.sliderBtn {
+   
+   position: absolute;
+   top: 75%;
+
+} 
+
+.sliderBtn a {
+   width: 160px;
+   border: 2px solid #ff7f47;
+   border-radius: 5px;
+   padding: 5px 0px;
+   text-decoration: none;
+  text-align: center;
+  font-size: 22px ;
+  color: #fff ;
+  display: inline-block;
+  font-weight: 600 ;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+
+ .sliderBtn a span{
+   width: 15% ;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   border-top-right-radius: 30px;
+   border-bottom-right-radius: 30px; 
+   background-color: #ff7f47;
+   transition: .5s ;
+   z-index: -1;
+} 
+
+.sliderBtn a:hover span{
+   width: 100%;
+   border-radius: 0;
+}
+
+
+.social-link a {
+   font-size: 18px;
+   display: inline-block;
+   background: #28251f;
+   color: #fff;
+   line-height: 1;
+   padding: 8px 0;
+   margin-right: 7px;
+   border-radius: 50%;
+   text-align: center;
+   width: 35px;
+   height: 35px;
+   transition: 0.4s;
+ }
+ .social-link a:hover {
+   background: #ecba62;
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+
+ /* Find Search Area */
+
+ .fromSection{
+   text-align: center;
+}
+
+.col1{
+   position: relative;
+   z-index: 12;
+}
+ .findBox{
+   position: absolute;
+    padding: 33px 0px;
+    background-color: #0c3f32c2;
+    border-radius: 20px;
+    position: absolute;
+    margin: auto;
+    z-index: 1;
+    margin-top: -32px;   
+   
+ } 
+ .findItem{
+   padding: 2px;
+   margin-top: 2px;
+   background-color: #fff;
+   border-radius: 10px;
+   align-items: center;
+   margin: auto;
+ }
+ .findInput{
+    width: 13rem;
+    border: 3px solid gray !important;
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 7px;
+    margin-right: 30px;
+    padding: 10px;
+    outline: none !important;
+  
+ }
+ .findInput:hover{
+   border-color: #f0885b !important;
+ }
+ .findInput:focus{
+   border-color: green !important;
+ }
+ 
+
+ .selectItem{
+  
+   padding: 10px;
+   border-radius: 5px;
+   margin-right: 30px;
+   width: 13rem;
+   outline: none !important;
+}
+.findOption{
+   color: #df5215; 
+}
+
+.findBtn{
+   width: 13rem;
+   background-color: #ff7f47;
+   color: white;
+   border: 1px solid #ff7f47 !important;
+   outline: none;
+   border-radius: 7px;
+   padding: 10px;
+
+}
+
+
+
+@media (min-width: 376px) and (max-width: 475.98px) { 
+
+   .findArea{
+      width: 70%;
+      margin-left: 1.5rem;
+     
+   }
+
+
+   
+
+}
+@media (min-width: 476px) and (max-width: 535.98px) { 
+
+   
+
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+ 
+  
+   .findBtn{
+     
+      margin-top: 5px;
+   }
+
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+   .findBtn{
+    
+      margin-top: 5px;
+   }
+   .findArea{
+      width: 70%;
+      margin-left: 3.5rem;
+     
+   }
+
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+   
+
+ }
+
+
+
+
+
+/* services AREA */
+.bg-service{
+   background-color: white;
+   padding-bottom: 25px;
+   margin-top: 70px;
+}
+.box{
+   
+  padding: 50px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.5s;
+  background: #1a1814;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  
+}
+.box:hover{
+   background: #cea256;
+   padding: 30px 30px 50px 30px;
+   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+   
+}
+.services-head{
+   color:#dd9d2d;
+   text-align: center;
+   margin-bottom: 24px;
+}
+
+.services-img{
+   width: 130px;
+   height: 130px;
+   margin: auto;
+   border-radius: 50%;
+
+}
+
+.services-img:hover{
+   background-color: #daaa57;
+
+
+}
+
+.services-title{
+   text-align: center;
+   margin-top: 25px;
+   font-size: 23px;
+   color: rgb(209, 205, 205);
+   letter-spacing: 1.5px;
+ }
+ .box p {
+   color: #aaaaaa;
+   font-size: 15px;
+   margin: 0;
+   padding: 0;
+   text-align: justify;
+ }
+  .box:hover h3, .box:hover p {
+   color: #fff;
+ }
+
