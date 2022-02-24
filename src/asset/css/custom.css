@@ -290,12 +290,13 @@
 
 
 /* services AREA */
-.bg-service{
+.bg-feature{
    background-color: white;
    padding-bottom: 25px;
    margin-top: 70px;
+ 
 }
-.box{
+.feature-box{
    
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -305,19 +306,19 @@
   border-top-right-radius: 20px;
   
 }
-.box:hover{
+.feature-box:hover{
    background: #cea256;
    padding: 30px 30px 50px 30px;
    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
    
 }
-.services-head{
+.feature-head{
    color:#dd9d2d;
    text-align: center;
    margin-bottom: 24px;
 }
 
-.services-img{
+.featureImg{
    width: 130px;
    height: 130px;
    margin: auto;
@@ -325,27 +326,91 @@
 
 }
 
-.services-img:hover{
+.featureImg:hover{
    background-color: #daaa57;
 
 
 }
 
-.services-title{
+.feature-title{
    text-align: center;
    margin-top: 25px;
    font-size: 23px;
    color: rgb(209, 205, 205);
    letter-spacing: 1.5px;
  }
- .box p {
-   color: #aaaaaa;
+ .feature-box p {
+   color: #727171;
    font-size: 15px;
    margin: 0;
    padding: 0;
    text-align: justify;
  }
-  .box:hover h3, .box:hover p {
+  .feature-box:hover h3, .feature-box:hover p {
    color: #fff;
  }
 
+
+/* Single service */
+
+.serviceTitle{
+   color: #f0885b;
+}
+
+.serviceDescription{
+   color: rgb(17, 17, 78);
+   font-weight: 800;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.service1 {
+   padding: 0px 0px 15px 0px;
+   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+  
+ }
+ .services-img {
+   width: 100%;
+   height: 100%;
+   margin: auto;
+  
+ }
+
+ .service-meta {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: #535252;
+ 
+ }
+
+ .service-meta .text1{
+    
+    margin: 0;
+    padding: 0;
+ }
+
+ .services-title {
+   
+   margin-top: 5px;
+   font-size: 20px;
+   color: #ff7f47;
+   letter-spacing: 1px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ .text2{
+    padding-bottom: 15px;
+ }
+
+ .card-btn {
+   padding: 8px 35px;
+   background-color: #fff;
+   border: 1px solid #f0885b;
+   color: #f0885b;
+   text-decoration: none;
+   border-radius: 20px;
+   font-weight: 500;
+   font-size: 18px;  
+   margin-top: 10px;
+ } 
+ 

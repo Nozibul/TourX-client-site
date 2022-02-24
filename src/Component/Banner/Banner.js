@@ -62,7 +62,7 @@ const Banner = () => {
                     <p className="sliderDescription"> 6 Days, 7 Night Tour </p>
         
                     <div className="sliderBtn ">
-                      <a  to="#"><span></span>More Info</a>
+                      <Link  to="#"><span></span>More Info</Link>
                     </div>
                     <div class="social-link">   
                       <Link to="#"><FontAwesomeIcon icon={ faFacebook } /></Link>
@@ -93,7 +93,7 @@ const Banner = () => {
                     <p className="sliderDescription"> 7 Days, 8 Night Tour </p>
         
                     <div className="sliderBtn ">
-                      <a  to="#"><span></span>More Info</a>
+                      <Link  to="#"><span></span>More Info</Link>
                     </div>
                     <div class="social-link">   
                       <Link to="#"><FontAwesomeIcon icon={ faFacebook } /></Link>
