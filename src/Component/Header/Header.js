@@ -56,6 +56,7 @@ const Header = () => {
 
                   <Nav className="m-auto m-5 ">
                       <Nav.Link> <NavLink style={navLinkStyle} className={navMenu ? "menu-itemScroll" : "menu-item"}  to="/">Home</NavLink></Nav.Link>
+                      <Nav.Link> <NavLink style={navLinkStyle} className={navMenu ? "menu-itemScroll" : "menu-item"}  to="/destination">Destination</NavLink></Nav.Link>
                       <Nav.Link> <NavLink style={navLinkStyle} className={navMenu ? "menu-itemScroll" : "menu-item"}  to="/package">Tour Package</NavLink></Nav.Link>
                       <Nav.Link> <NavLink style={navLinkStyle} className={navMenu ? "menu-itemScroll" : "menu-item"}  to="/blog">Blogs</NavLink></Nav.Link>
                       <Nav.Link> <NavLink style={navLinkStyle} className={navMenu ? "menu-itemScroll" : "menu-item"}  to="/pages">Pages</NavLink> </Nav.Link>

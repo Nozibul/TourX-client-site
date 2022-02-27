@@ -5,8 +5,10 @@ import Banner from '../Component/Banner/Banner';
 import FindPage from '../Component/FindPage/FindPage';
 import OurService from '../Component/OurService/OurService';
 import SingleService from '../Component/SingleService/SingleService';
-// import FooterPage from '../Component/FooterPage/FooterPage';
-
+import FooterPage from '../Component/FooterPage/FooterPage';
+import NewsLetter from '../Component/NewsLetter/NewsLetter';
+// import UserReview from '../Component/UserReview/UserReview';
+import Blogs from '../Component/Blogs/Blogs';
 
 
 const Home = () => {
@@ -17,7 +19,10 @@ const Home = () => {
             <FindPage />
             <OurService />
             <SingleService />
-            {/* <FooterPage /> */}
+            <Blogs />
+            {/* <UserReview /> */}
+            <NewsLetter />
+            <FooterPage />
             
         </>
     );
