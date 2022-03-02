@@ -14,7 +14,7 @@ import Blogs from '../Component/Blogs/Blogs';
 const Home = () => {
     return (
         <>  
-            <Header />
+            <Header title="Home"/>
             <Banner />
             <FindPage />
             <OurService />

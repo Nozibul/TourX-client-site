@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Row, Col, Container } from "react-bootstrap";
+import { Carousel, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../../asset/css/custom.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,7 +17,7 @@ import slide3 from "../../asset/image/b2.png";
 const Banner = () => {
   return (
     <>
-      <Container fluid>
+      {/* <Container fluid> */}
         <Carousel
           style={{ zIndex: "1" }}
           fade
@@ -144,7 +144,7 @@ const Banner = () => {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-      </Container>
+      {/* </Container> */}
     </>
   );
 };

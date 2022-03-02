@@ -16,27 +16,27 @@ const Blogs = () => {
       </div>
           <Row ClassName="blog mt-3">
             <Col sm={12} md={6} lg={4} className="mb-3">
-              <div class="blogBox">
+              <div className="blogBox">
                 <img src={image1} alt="" />
                 <h5 className="mt-2">Mobile Application</h5>
                 <p className="mt-2">Adipisicing elit. Nesciunt expedita voluptatibus, voluptates asperiores.</p>
-                <Link to="/blogsDetails" className="detailBtn">Read More</Link>
+                <Link to="/blogsDetails" className="detailBtn"><span></span>Read More</Link>
               </div>
             </Col>
             <Col sm={12} md={6} lg={4} className="mb-3">
-              <div class="blogBox">
+              <div className="blogBox">
                 <img src={image2} alt="" />
                 <h5 className="mt-2">Web Development</h5>
                 <p className="mt-2">Adipisicing elit. Nesciunt expedita voluptatibus, voluptates asperiores.</p>
-               <Link to="/blogsDetails" className="detailBtn">Read More</Link>
+               <Link to="/blogsDetails" className="detailBtn"><span></span>Read More</Link>
               </div>
             </Col>
             <Col sm={12} md={6} lg={4} className="mb-3">
-              <div class="blogBox">
+              <div className="blogBox">
                 <img src={image3} alt="" />
                 <h5 className="mt-2">Web Design</h5>
                 <p className="mt-2">Adipisicing elit. Nesciunt expedita voluptatibus, voluptates asperiores.</p>
-                <Link to="/blogsDetails" className="detailBtn">Read More</Link>
+                <Link to="/blogsDetails" className="detailBtn"><span></span>Read More</Link>
               </div>
             </Col>
           </Row>

@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 import whiteLogo from "../../asset/image/logo.png"
 import blueLogo from "../../asset/image/header-logo.png"
 
-const Header = () => {
+const Header = ({title}) => {
  const [navbar, setNavbar] = useState( [whiteLogo]);
  const [navBg, setNavBg] = useState(false);
  const [navMenu, setNavMenu] = useState(false);
@@ -46,6 +46,7 @@ const Header = () => {
 
     return (
         <>
+         <title>{title} - TourX</title>
           <Navbar fixed="top" variant="dark" className={navBg ? "nav-bgScroll" : "nav-bg"} collapseOnSelect expand="lg" >
              <Container> 
               <Navbar.Brand> <NavLink to="/" >  

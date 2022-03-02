@@ -124,8 +124,8 @@
    position: absolute;
    top: 0;
    left: 0;
-   border-top-right-radius: 30px;
    border-bottom-right-radius: 30px; 
+   border-top-right-radius: 30px;
    background-color: #ff7f47;
    transition: .5s ;
    z-index: -1;
@@ -492,10 +492,13 @@
 }
 
 .detailBtn{
-    color: #ffffff !important;
-    font-size: 18px !important;
-    text-decoration: none;
+   color: #fff !important;
+   font-size: 18px !important;
+   text-decoration: none;
 	position: absolute;
+   text-align: center;
+   border-radius: 5px;
+   padding-top: 5px;
 	width:140px;
 	height: 40px;
 	display: flex;
@@ -505,31 +508,41 @@
 	left: 50%;
 	bottom: -20px;
 	transform: translateX(-50%);
-	border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
-	background:linear-gradient(120deg,#6b60ec 20%,#a166f4);
-	animation: fade 0.3s;
+   background-color: #0f4b3c;	
+	/* animation: fade 0.3s; */
+   z-index: 1;
+   display: inline-block;
 }
 
-.buyNowBtn{
-    color: #ffffff !important;
-    font-size: 16px !important;
-    text-decoration: none;
-    padding: 5px 20px;
-    background-color: #6b60ec;
-    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+
+.detailBtn span{
+   width: 16% ;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   border-top-right-radius: 30px;
+   border-bottom-right-radius: 30px; 
+   background-color: #ff7f47;
+   transition: .5s ;
+   z-index: -1;
+
+} 
+
+.detailBtn:hover span{
+   width: 100%;
+   border-radius: 0;
+   
 }
+
 
 
 .blogBox:hover{
-	/* box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2); */
-	/* background-color:#FFF; */
    transform: translateY(-20px);
 }
 
 /*  Review Section */
-.swiper{
-   width: 900px;
-}
+
 .review-card{
    background-color: #fff;
    border-radius:20px;
@@ -759,4 +772,96 @@ a:hover{
 .copyright{
    width: 370px;
    margin: auto;
+}
+
+
+/* Contact section */
+
+.topFixedBanner{
+   background-image: url("../../asset/image/b1 (2).png");
+   min-height: 330px;
+   width: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+
+}
+
+.topFixedOverlay{
+   position: absolute;
+   min-height: 330px;
+   width: 100%;
+   background:rgba(0, 0, 0, 0.4);
+}
+
+.topFixedContent{
+ margin-top: 8rem;
+ text-align: center;
+   
+}
+
+.topFixedTitle h2{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    text-align: center;
+    top: 52%;
+    left: 50%;
+    color: whitesmoke;
+} 
+
+.contactUs{
+   text-align: center;
+}
+
+.contactBlog{
+   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+	background-color:#FFFFFF;
+	border-radius: 15px;
+	margin: 10px 10px;
+   padding-bottom: 30px;
+   transition: 0.5s;
+
+   margin-bottom: 30px;
+}
+.contact-icon{
+  /* background-color: #21493f; */
+  margin: 0;
+  padding: 20px 20px;
+  border-bottom-right-radius: 70%; 
+  
+}
+.contactBlog:hover .contactIcon{
+  background-color: #ff7f47;
+  transform:scale(1.1);
+}
+
+.contactIcon{
+   background-color: #21493f;
+   font-size: 40px;
+   color: #fff;
+   border-radius: 50%;
+   padding: 10px;
+   transition: .5s ;
+}
+
+.contact-titles{
+   margin: 10px 0px;
+   text-align: left;
+}
+.contact-Des{
+   color: #8d8b8b;
+}
+
+.social-contact{
+   font-size: 22px;
+   color: #666363;
+   margin-top: 20px;
+   padding: 10px;
+   transition: .5s ;
+  
+}
+.social-contact:hover{
+   color: #ff7f47;
+   transform:scale(1.3);
 }
