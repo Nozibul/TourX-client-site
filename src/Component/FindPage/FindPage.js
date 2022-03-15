@@ -37,7 +37,7 @@ const FindPage = () => {
                </Form>            
             </Col>
             <Col lg={1} md={1} sm={2} ></Col>
-        
+  
             </Row>
          </Container>  
         </>
@@ -45,3 +45,5 @@ const FindPage = () => {
 };
 
 export default FindPage;
+
+

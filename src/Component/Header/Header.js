@@ -1,6 +1,6 @@
 import React,{ useState , useEffect } from 'react';
 import "../../asset/css/custom.css"
-import { Container, Nav, Navbar, } from 'react-bootstrap'
+import { Container, Nav, Navbar, NavDropdown ,Dropdown} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom';
 
 import whiteLogo from "../../asset/image/logo.png"
@@ -10,6 +10,16 @@ const Header = ({title}) => {
  const [navbar, setNavbar] = useState( [whiteLogo]);
  const [navBg, setNavBg] = useState(false);
  const [navMenu, setNavMenu] = useState(false);
+
+
+ const [show, setShow] = useState(false);
+ const showDropdown = (e)=>{
+     setShow(!show);
+ }
+ const hideDropdown = e => {
+     setShow(false);
+ }
+
 
  const onScroll=()=>{
    if(window.scrollY>=80){
@@ -49,7 +59,7 @@ const Header = ({title}) => {
          <title>{title} - TourX</title>
           <Navbar fixed="top" variant="dark" className={navBg ? "nav-bgScroll" : "nav-bg"} collapseOnSelect expand="lg" >
              <Container> 
-              <Navbar.Brand> <NavLink to="/" >  
+              <Navbar.Brand> <NavLink to="/" > 
                           <img className="menu-logo" src={navbar} alt="" />  
               </NavLink></Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -60,7 +70,23 @@ const Header = ({title}) => {
                       <Nav.Link> <NavLink style={navLinkStyle} className={navMenu ? "menu-itemScroll" : "menu-item"}  to="/destination">Destination</NavLink></Nav.Link>
                       <Nav.Link> <NavLink style={navLinkStyle} className={navMenu ? "menu-itemScroll" : "menu-item"}  to="/package">Tour Package</NavLink></Nav.Link>
                       <Nav.Link> <NavLink style={navLinkStyle} className={navMenu ? "menu-itemScroll" : "menu-item"}  to="/blog">Blogs</NavLink></Nav.Link>
-                      <Nav.Link> <NavLink style={navLinkStyle} className={navMenu ? "menu-itemScroll" : "menu-item"}  to="/pages">Pages</NavLink> </Nav.Link>
+
+                      <Dropdown 
+                       show={show}
+                       onMouseEnter={showDropdown} 
+                       onMouseLeave={hideDropdown}>
+                        <Dropdown.Toggle
+                          variant="white"                
+                         className={navMenu ? "menu-itemScroll" : "menu-item"}>pages
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                          <Dropdown.Item to="/contact">Action</Dropdown.Item>  <NavDropdown.Divider />
+                          <Dropdown.Item to="#">Another action</Dropdown.Item> <NavDropdown.Divider />
+                          <Dropdown.Item to="#">Something else</Dropdown.Item> <NavDropdown.Divider />
+                          <Dropdown.Item to="#">Something else</Dropdown.Item>
+                        </Dropdown.Menu>
+                      </Dropdown>   
+                    
                       <Nav.Link> <NavLink style={navLinkStyle} className={navMenu ? "menu-itemScroll" : "menu-item"}  to="/about">About</NavLink> </Nav.Link>
                       <Nav.Link> <NavLink style={navLinkStyle} className={navMenu ? "menu-itemScroll" : "menu-item"}  to="/contact">Contact</NavLink> </Nav.Link>
 
@@ -75,3 +101,18 @@ const Header = ({title}) => {
 export default Header;
 
 
+/* 
+<NavDropdown title="pages"   
+                        style={{color:"white", fontSize:"22px"}}
+                        // className={navMenu ? "menu-itemScroll" : "menu-item"}
+                        show={show}
+                        onMouseEnter={showDropdown} 
+                        onMouseLeave={hideDropdown}
+                      >
+                        <Nav.Link> <NavDropdown.Item  to="/pages">pages</NavDropdown.Item> </Nav.Link>
+                       
+                        {/* <NavDropdown.Item className={navMenu ? "menu-itemScroll" : "menu-item"} to="#">Action</NavDropdown.Item>   }
+                        // <NavDropdown.Item to="#">Action</NavDropdown.Item>  
+                        // <NavDropdown.Item to="#">Action</NavDropdown.Item>  
+                      // </NavDropdown>   
+ */

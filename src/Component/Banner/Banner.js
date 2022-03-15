@@ -2,22 +2,16 @@ import React from "react";
 import { Carousel, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../../asset/css/custom.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faYoutube,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { FaFacebook,FaTwitter,FaPhoneVolume,FaLinkedinIn } from "react-icons/fa";
 
 import slide1 from "../../asset/image/b1 (2).png";
 import slide2 from "../../asset/image/b1.png";
 import slide3 from "../../asset/image/b2.png";
 
 const Banner = () => {
+
   return (
     <>
-      {/* <Container fluid> */}
         <Carousel
           style={{ zIndex: "1" }}
           fade
@@ -47,17 +41,17 @@ const Banner = () => {
                     </Link>
                   </div>
                   <div class="social-link">
-                    <Link to="#">
-                      <FontAwesomeIcon icon={faFacebook} />
+                  <Link to="#">
+                      <FaFacebook />
                     </Link>
                     <Link to="#">
-                      <FontAwesomeIcon icon={faYoutube} />
+                      <FaTwitter />
                     </Link>
                     <Link to="#">
-                      <FontAwesomeIcon icon={faLinkedinIn} />
+                    <FaLinkedinIn/>
                     </Link>
                     <Link to="#">
-                      <FontAwesomeIcon icon={faPhone} />
+                      <FaPhoneVolume />
                     </Link>
                   </div>
                 </Col>
@@ -86,17 +80,17 @@ const Banner = () => {
                     </Link>
                   </div>
                   <div class="social-link">
-                    <Link to="#">
-                      <FontAwesomeIcon icon={faFacebook} />
+                  <Link to="#">
+                      <FaFacebook />
                     </Link>
                     <Link to="#">
-                      <FontAwesomeIcon icon={faYoutube} />
+                      <FaTwitter />
                     </Link>
                     <Link to="#">
-                      <FontAwesomeIcon icon={faLinkedinIn} />
+                    <FaLinkedinIn/>
                     </Link>
                     <Link to="#">
-                      <FontAwesomeIcon icon={faPhone} />
+                      <FaPhoneVolume />
                     </Link>
                   </div>
                 </Col>
@@ -126,16 +120,16 @@ const Banner = () => {
                   </div>
                   <div class="social-link">
                     <Link to="#">
-                      <FontAwesomeIcon icon={faFacebook} />
+                      <FaFacebook />
                     </Link>
                     <Link to="#">
-                      <FontAwesomeIcon icon={faYoutube} />
+                      <FaTwitter />
                     </Link>
                     <Link to="#">
-                      <FontAwesomeIcon icon={faLinkedinIn} />
+                    <FaLinkedinIn/>
                     </Link>
                     <Link to="#">
-                      <FontAwesomeIcon icon={faPhone} />
+                      <FaPhoneVolume />
                     </Link>
                   </div>
                 </Col>
@@ -144,7 +138,6 @@ const Banner = () => {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-      {/* </Container> */}
     </>
   );
 };

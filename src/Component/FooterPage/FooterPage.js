@@ -1,8 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faYoutube, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FaFacebook,FaTwitter,FaPhoneVolume,FaLinkedinIn,FaSms,FaLocationArrow } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import footer1 from '../../asset/image/logo.png' ;
 import payment1 from '../../asset/image/payment/download.png'
@@ -25,10 +23,10 @@ const FooterPage = () => {
                       </p>
                       <h3 className='footerTitle '>Follow Us:</h3>
                       <div class="footerSocial mt-3">   
-                        <Link to="#"><FontAwesomeIcon icon={ faFacebook } /></Link>
-                        <Link to="#"><FontAwesomeIcon icon={ faYoutube } /></Link>
-                        <Link to="#"><FontAwesomeIcon icon={ faLinkedinIn } /></Link>
-                        <Link to="#"><FontAwesomeIcon icon={ faPhone } /></Link>            
+                        <Link to="#"><FaFacebook /></Link>
+                        <Link to="#"><FaTwitter /></Link>
+                        <Link to="#"><FaLinkedinIn /></Link>
+                        <Link to="#"><FaPhoneVolume /></Link>            
                      </div>
                     </Col>
                   
@@ -36,18 +34,14 @@ const FooterPage = () => {
                       <h3 className='footerTitle text-center ms-3'>Contact Us</h3>
 
                        <div className='footerContact mt-5 '>
-                        <p><FontAwesomeIcon 
-                         className='footerIcon me-3' 
-                         icon={faPhone} />
+                        <p><FaPhoneVolume className='footerIcon me-3'></FaPhoneVolume> 
+                       
                          </p>
                            <Link to="#">++88019555554488<br />++88098755444555</Link>
                        </div>
 
                        <div className='footerContact '>
-                         <p><FontAwesomeIcon 
-                         className='footerIcon me-3' 
-                         icon={faEnvelope} />
-                         </p>
+                          <p><FaSms className='footerIcon me-3'></FaSms> </p>
                            <Link to="#">                          
                             tourx@gmail.com <br />
                             support@gmail.com
@@ -55,10 +49,8 @@ const FooterPage = () => {
                        </div>
 
                        <div className='footerContact'>
-                         <p><FontAwesomeIcon 
-                         className='footerIcon me-3' 
-                         icon={faPhone} />
-                         </p>
+                       <p><FaLocationArrow className='footerIcon me-3'></FaLocationArrow> </p>
+
                            <Link to="#">                             
                                 2752 Willison Street <br />
                                 Eagan, United State.
