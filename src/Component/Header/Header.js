@@ -1,7 +1,8 @@
 import React,{ useState , useEffect } from 'react';
 import "../../asset/css/custom.css"
 import { Container, Nav, Navbar, NavDropdown ,Dropdown} from 'react-bootstrap'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import { FaSearch ,FaUserAlt } from "react-icons/fa";
 
 import whiteLogo from "../../asset/image/logo.png"
 import blueLogo from "../../asset/image/header-logo.png"
@@ -65,7 +66,7 @@ const Header = ({title}) => {
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
 
-                  <Nav className="m-auto m-5 ">
+                  <Nav className="m-auto">
                       <Nav.Link> <NavLink style={navLinkStyle} className={navMenu ? "menu-itemScroll" : "menu-item"}  to="/">Home</NavLink></Nav.Link>
                       <Nav.Link> <NavLink style={navLinkStyle} className={navMenu ? "menu-itemScroll" : "menu-item"}  to="/destination">Destination</NavLink></Nav.Link>
                       <Nav.Link> <NavLink style={navLinkStyle} className={navMenu ? "menu-itemScroll" : "menu-item"}  to="/package">Tour Package</NavLink></Nav.Link>
@@ -81,17 +82,37 @@ const Header = ({title}) => {
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
                           <Dropdown.Item to="/contact">Action</Dropdown.Item>  <NavDropdown.Divider />
-                          <Dropdown.Item to="#">Another action</Dropdown.Item> <NavDropdown.Divider />
-                          <Dropdown.Item to="#">Something else</Dropdown.Item> <NavDropdown.Divider />
-                          <Dropdown.Item to="#">Something else</Dropdown.Item>
+                          <Dropdown.Item to="#">Another</Dropdown.Item> <NavDropdown.Divider />
+                          <Dropdown.Item to="#">Something</Dropdown.Item> <NavDropdown.Divider />
+                          <Dropdown.Item to="#">Something</Dropdown.Item>
                         </Dropdown.Menu>
                       </Dropdown>   
                     
                       <Nav.Link> <NavLink style={navLinkStyle} className={navMenu ? "menu-itemScroll" : "menu-item"}  to="/about">About</NavLink> </Nav.Link>
                       <Nav.Link> <NavLink style={navLinkStyle} className={navMenu ? "menu-itemScroll" : "menu-item"}  to="/contact">Contact</NavLink> </Nav.Link>
-
+               
                   </Nav>
                </Navbar.Collapse>
+              
+               <div className='search-box'>
+                   <input className='search-text' required type="text" placeholder='Country Name...' />
+                   <Link to="#" className="searchBtn">
+                     <FaSearch className='search-icon'></FaSearch>
+                   </Link>
+               </div>
+               <Dropdown className='user-info'>
+                  <Dropdown.Toggle
+                    variant="white"                
+                  //  className={navMenu ? "menu-itemScroll" : "menu-item"}
+                  > <FaUserAlt className='search-icon' />
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item to="/contact">Action</Dropdown.Item>  <NavDropdown.Divider />
+                    <Dropdown.Item to="#">Another</Dropdown.Item> <NavDropdown.Divider />
+                    <Dropdown.Item to="#">Something</Dropdown.Item> <NavDropdown.Divider />
+                    <Dropdown.Item to="#">Something</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown> 
              </Container> 
            </Navbar>
         </>
