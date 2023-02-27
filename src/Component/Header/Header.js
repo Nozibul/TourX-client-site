@@ -8,7 +8,7 @@ import whiteLogo from "../../asset/image/logo.png"
 import blueLogo from "../../asset/image/header-logo.png"
 
 const Header = ({title}) => {
- const [navbar, setNavbar] = useState( [whiteLogo]);
+ const [navbar, setNavbar] = useState([whiteLogo]);
  const [navBg, setNavBg] = useState(false);
  const [navMenu, setNavMenu] = useState(false);
 
@@ -40,8 +40,6 @@ const Header = ({title}) => {
       window.addEventListener('scroll', onScroll)
 
      }
-    
-
    }, [])
 
 
@@ -122,18 +120,3 @@ const Header = ({title}) => {
 export default Header;
 
 
-/* 
-<NavDropdown title="pages"   
-                        style={{color:"white", fontSize:"22px"}}
-                        // className={navMenu ? "menu-itemScroll" : "menu-item"}
-                        show={show}
-                        onMouseEnter={showDropdown} 
-                        onMouseLeave={hideDropdown}
-                      >
-                        <Nav.Link> <NavDropdown.Item  to="/pages">pages</NavDropdown.Item> </Nav.Link>
-                       
-                        {/* <NavDropdown.Item className={navMenu ? "menu-itemScroll" : "menu-item"} to="#">Action</NavDropdown.Item>   }
-                        // <NavDropdown.Item to="#">Action</NavDropdown.Item>  
-                        // <NavDropdown.Item to="#">Action</NavDropdown.Item>  
-                      // </NavDropdown>   
- */

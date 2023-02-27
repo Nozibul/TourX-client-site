@@ -51,7 +51,7 @@ const OurService = () => {
                         </Col>
                     </Row>
                 </Container>
-             </div> 
+            </div> 
     );
 };
 

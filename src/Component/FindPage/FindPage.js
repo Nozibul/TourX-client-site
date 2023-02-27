@@ -12,7 +12,7 @@ const FindPage = () => {
   };
     return (
         <>
-          <Container  >
+          {/* <Container  >
            <Row >
             <Col lg={1} md={1} sm={2}></Col>
             <Col lg={10} md={8} sm={8}  className="findBox" >
@@ -39,7 +39,7 @@ const FindPage = () => {
             <Col lg={1} md={1} sm={2} ></Col>
   
             </Row>
-         </Container>  
+         </Container>   */}
         </>
     );
 };

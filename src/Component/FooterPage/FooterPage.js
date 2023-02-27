@@ -70,7 +70,7 @@ const FooterPage = () => {
                     </Col>
 
                     <Col lg={3} md={6} sm={12}>
-                    <h3 className='footerTitle text-center ms-5'>We Accepts:</h3>
+                    <h3 className='footerTitle text-center mt-5'>We Accepts:</h3>
                       <div className='footerPayment mt-5'>
                          <Row className='mb-4'>
                              <Col lg={6} md={6} sm={6}>
